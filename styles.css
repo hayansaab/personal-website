@@ -8,6 +8,7 @@
   --on-card-muted: #faf7f3a6;
   --on-card-hair: #faf7f31a;
   --stripe: rgba(136, 136, 136, 0.2);
+  --web: rgba(17, 17, 17, 0.16);
 
   --font: "Archivo", system-ui, sans-serif;
   --ease: cubic-bezier(.44, 0, .56, 1);
@@ -29,6 +30,7 @@
     --on-card: #f3efe9;
     --on-card-muted: #f3efe9a6;
     --on-card-hair: #f3efe91a;
+    --web: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -360,6 +362,8 @@ html:not(.js) .slide + .slide { border-top: 1px solid var(--on-card-hair); }
 .js .reveal.in, .js [data-split].in .w { opacity: 1; transform: none; filter: none; }
 [data-split] .w { display: inline-block; }
 .ch { display: inline-block; }
+/* Wave web behind everything; body's background paints on the canvas root, below it */
+.web { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
 .vapor { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 49; pointer-events: none; }
 
 @media (prefers-reduced-motion: reduce) {
