@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hayan Saab</title>
+  <meta name="description" content="Hayan Saab — Computer Science student at Whitman College, founder of the Whitman Innovation Lab, and researcher in fraud detection and algorithmic fairness.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="mark" href="#">Hayan Saab</a>
+    <nav aria-label="Sections">
+      <a href="#lab">Innovation Lab</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Hayan Saab</h1>
+      <p class="lede">I study computer science at Whitman College, with minors in data science and finance. I founded the Whitman Innovation Lab, lead our ACM chapter, and research how fraud-detection models treat different people.</p>
+
+      <ol class="route" aria-label="Where I've lived and where I'm headed">
+        <li><span class="place">Syria</span><span class="note">Born and raised</span></li>
+        <li><span class="place">Hong Kong</span><span class="note">Formative years</span></li>
+        <li><span class="place">United World College</span><span class="note">IB Diploma</span></li>
+        <li class="here"><span class="place">Walla Walla</span><span class="note">Whitman, class of 2028</span></li>
+        <li class="next"><span class="place">San Francisco</span><span class="note">Career trek, January</span></li>
+      </ol>
+    </section>
+
+    <section id="lab" class="block">
+      <h2>Whitman Innovation Lab</h2>
+      <div class="body">
+        <p class="role">Founder and program lead, April 2026 to present</p>
+        <p class="big">A semester-long accelerator where CS students build and ship a prototype for a real problem brought by an alumni mentor.</p>
+        <p>Teams work in AI, cybersecurity, fintech and healthtech. The program pairs lectures on version control, system design and agentic coding with hands-on labs, weekly presentations and set milestones. I designed the curriculum, wrote the student guide, and built the budget proposal with high, low and pilot funding scenarios.</p>
+
+        <dl class="facts">
+          <div><dt>24</dt><dd>students in the first cohort</dd></div>
+          <div><dt>6</dt><dd>teams, two per alumni mentor</dd></div>
+          <div><dt>47</dt><dd>industry contacts in outreach, from Apple and Nvidia to OpenAI and Anthropic</dd></div>
+          <div><dt>3</dt><dd>nights in San Francisco for the strongest team per mentor</dd></div>
+        </dl>
+
+        <figure class="grading">
+          <figcaption>How students are graded. Shipping code counts for more than showing up.</figcaption>
+          <div class="bar" role="img" aria-label="Group project 40%, GitHub commits 30%, attendance and participation 10%, group presentations 10%, pre-class work 5%, post-class tasks 5%">
+            <span style="--w:40" class="s1"><b>40%</b> Group project</span>
+            <span style="--w:30" class="s2"><b>30%</b> GitHub commits</span>
+            <span style="--w:10" class="s3"><b>10%</b> Attendance</span>
+            <span style="--w:10" class="s4"><b>10%</b> Presentations</span>
+            <span style="--w:5" class="s5"><b>5%</b></span>
+            <span style="--w:5" class="s6"><b>5%</b></span>
+          </div>
+          <p class="bar-key">The two 5% slices are pre-class work and post-class tasks. Students must also be able to explain every line of AI-assisted code they submit.</p>
+        </figure>
+      </div>
+    </section>
+
+    <section id="research" class="block">
+      <h2>Research</h2>
+      <div class="body">
+        <p class="role">Fraud detection and algorithmic fairness, summer 2026<br>Advised by Richard Torres Molina, Whitman Department of Computer Science</p>
+        <p class="big">Fraud models are judged on how much fraud they catch. I also wanted to know who they wrongly flag.</p>
+        <p>I built a stacked ensemble classifier on the synthetic Sparkov transaction dataset, comparing random forests, XGBoost and neural networks. Because fraud is rare, I evaluated with precision, recall and precision-recall curves rather than accuracy. I then audited the models across cardholder groups using statistical parity, equalized odds and equal opportunity.</p>
+        <ul class="plain">
+          <li>Preprocessing and feature engineering in Python with pandas, NumPy and scikit-learn, including log transforms for skewed features like city population</li>
+          <li>A literature review covering Kozodoi et al. (2022), Kamalaruban et al. (2024), Hardt et al. (2016) and the Bank Account Fraud dataset suite</li>
+          <li>Methods sections of a technical paper on fraud-injection calibration, preprocessing and skewness analysis</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="block">
+      <h2>Experience</h2>
+      <div class="body">
+        <ul class="timeline">
+          <li>
+            <p class="when">July 2025 – now</p>
+            <div>
+              <h3>President, ACM Student Chapter</h3>
+              <p>I lead the executive board, run the chapter's budget and operations, and worked with faculty, the CCEC and alumni to launch the Innovation Lab as a chapter initiative.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when">2026 – now</p>
+            <div>
+              <h3>Organizer, CCSC-NW Hackathon</h3>
+              <p>Organizing a hackathon alongside the regional computing conference hosted at Whitman, and recruiting a company to bring a real problem for participants to solve.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when">Sept 2024 – now</p>
+            <div>
+              <h3>IT Consultant, Whitman Technology Services</h3>
+              <p>About 15 hours a week supporting students, faculty and staff: resolving tickets, administering Duo multi-factor authentication, and supporting Microsoft 365.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when">Sept 2025 – Mar 2026</p>
+            <div>
+              <h3>Consultant, Whitman Finance Accelerator</h3>
+              <p>Led a consulting project on embedding AI in healthcare, weighing costs and benefits against the effects on organizations and patients.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when">Oct 2024 – May 2026</p>
+            <div>
+              <h3>Content Creator, Whitman Digital Fluencies</h3>
+              <p>Designed posts, video visuals and posters in Canva, Photoshop and Illustrator, and wrote articles on topics from Apple Notes to how people work with AI.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Skills</h2>
+      <div class="body skills">
+        <div>
+          <h3>Languages</h3>
+          <p>Python (pandas, NumPy, scikit-learn), R and RMarkdown, C++, regular expressions</p>
+        </div>
+        <div>
+          <h3>Machine learning</h3>
+          <p>Ensembles (random forests, XGBoost, stacking), neural networks, feature engineering, model evaluation, fairness auditing</p>
+        </div>
+        <div>
+          <h3>Foundations</h3>
+          <p>Data structures and algorithms, max flow, dynamic programming, NP-completeness, randomized algorithms, Git</p>
+        </div>
+        <div>
+          <h3>Building with AI</h3>
+          <p>Agentic coding with Claude Code. Prototypes include a Whitman carpool app, a budgeting system and a course analytics dashboard.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>What's next</h2>
+      <div class="body">
+        <p class="big">I want to found a technology company, lead its engineering team, and still understand every part of what we build.</p>
+        <p>To get there I'm following a two-year roadmap I wrote for myself: 80% software engineering fundamentals, 15% cloud, 5% security, and one project I build and deploy on my own each semester. I code for two hours every day.</p>
+        <p class="aside">Outside of work: guitar, basketball, photography, camping, astronomy, and telling stories through writing and video.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="block contact">
+      <h2>Contact</h2>
+      <div class="body">
+        <p class="big">I'm looking for mentors for the Innovation Lab, research collaborators, and summer engineering roles.</p>
+        <ul class="links">
+          <li><a href="mailto:saabh@whitman.edu">saabh@whitman.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hayan-saab" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/hayansaab" rel="noopener">GitHub</a></li>
+          <li><a href="assets/Hayan-Saab-Resume.pdf">Resume (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Hayan Saab, Walla Walla, Washington</p>
+  </footer>
+</body>
+</html>

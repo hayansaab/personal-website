@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hayan Saab</title>
+  <meta name="description" content="Hayan Saab — Computer Science student at Whitman College, founder of the Whitman Innovation Lab, and researcher in fraud detection and algorithmic fairness.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Floating nav -->
+  <header class="nav" data-open="false">
+    <div class="nav-bar">
+      <a class="mark" href="#top">Hayan Saab</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="nav-menu" class="nav-menu" aria-label="Sections">
+      <a href="#about">Who am I</a>
+      <a href="#journey">Journey</a>
+      <a href="#projects">Projects</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Let's connect</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="display" data-split>HAYAN<br>SAAB</h1>
+      <p class="hero-sub reveal">Computer science at Whitman College. Founder of the Whitman Innovation Lab. Researching who fraud models get wrong.</p>
+    </section>
+
+    <!-- Who am I -->
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <div class="about-top">
+        <div class="about-left">
+          <p class="label">/Who am I</p>
+          <h2 id="about-title" class="h-xl" data-split>Who am I?</h2>
+        </div>
+        <div class="about-right">
+          <p class="body-lg reveal">I'm Hayan, a computer science student at Whitman College with minors in data science and finance, class of 2028. You can find my code on <a class="inline-link" href="https://github.com/hayansaab" rel="noopener">GitHub</a> and my work history on <a class="inline-link" href="https://www.linkedin.com/in/hayan-saab" rel="noopener">LinkedIn</a>.</p>
+          <p class="reveal muted">Outside of work: guitar, basketball, photography, camping, astronomy, and telling stories through writing and video.</p>
+          <a class="arrow-btn reveal" href="assets/Hayan-Saab-Resume.pdf">
+            Resume
+            <span class="sq" aria-hidden="true">
+              <svg class="a1" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+              <svg class="a2" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="about-block">
+        <p class="label">/What I believe</p>
+        <div class="skill-grid">
+          <article class="skill card reveal"><h3>Understand every part of what you build.</h3><p>I want to lead engineering teams and still know how each piece works.</p><span class="num">01</span></article>
+          <article class="skill card reveal"><h3>Shipping beats showing up.</h3><p>In the Innovation Lab, the group project and GitHub commits make up 70% of the grade. Attendance is 10%.</p><span class="num">02</span></article>
+          <article class="skill card reveal"><h3>Own the code AI writes.</h3><p>Lab students must be able to explain every line of AI-assisted code they submit.</p><span class="num">03</span></article>
+          <article class="skill card reveal"><h3>Ask who a model gets wrong.</h3><p>Fraud models are judged on how much fraud they catch. I also want to know who they wrongly flag.</p><span class="num">04</span></article>
+        </div>
+      </div>
+
+      <div class="about-block">
+        <p class="label">/Goals for the next two years</p>
+        <ul class="rows exp">
+          <li class="row reveal"><div><h3>Go deep on fundamentals</h3><p>80% software engineering fundamentals, 15% cloud, 5% security.</p></div><p class="when">Roadmap</p></li>
+          <li class="row reveal"><div><h3>Ship something of my own every semester</h3><p>One project I build and deploy on my own, start to finish.</p></div><p class="when">Each semester</p></li>
+          <li class="row reveal"><div><h3>Code every day</h3><p>Two hours, every day.</p></div><p class="when">Daily</p></li>
+        </ul>
+        <p class="roadmap reveal">Toolkit: Python (pandas, NumPy, scikit-learn), R, C++, machine learning ensembles and fairness auditing, Git, and agentic coding with Claude Code.</p>
+      </div>
+    </section>
+
+    <!-- Journey: steps on the left, scroll-driven globe on the right -->
+    <section class="journey wrap" id="journey" aria-labelledby="journey-title">
+      <div class="journey-steps">
+        <div class="journey-head">
+          <p class="label">/Journey</p>
+          <h2 id="journey-title" class="h-lg" data-split>From Syria<br>to the States</h2>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="step-n">01</span><h3>Syria</h3><p>Born and raised.</p></li>
+          <li class="step"><span class="step-n">02</span><h3>Hong Kong</h3><p>IB Diploma at UWC Li Po Chun.</p></li>
+          <li class="step"><span class="step-n">03</span><h3>The States</h3><p>Whitman College in Walla Walla, class of 2028. Where I am now.</p></li>
+        </ol>
+      </div>
+      <div class="journey-globe">
+        <div class="globe-sticky">
+          <canvas class="globe" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="manifesto" aria-label="What's next">
+      <div class="manifesto-pin">
+        <p class="manifesto-text wrap" data-scrub>I want to found a technology company, lead its engineering team, and still understand every part of what we build.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <p class="label">/Projects</p>
+      <h2 id="projects-title" class="h-lg" data-split>Things I've built</h2>
+
+      <div class="window reveal" data-window role="region" aria-roledescription="carousel" aria-label="Projects">
+        <div class="win-bar">
+          <span class="win-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <div class="win-tabs">
+            <button class="win-tab" type="button">Innovation Lab</button>
+            <button class="win-tab" type="button">Quak</button>
+            <button class="win-tab" type="button">Fraud &amp; fairness</button>
+            <button class="win-tab" type="button">AI in healthcare</button>
+            <button class="win-tab" type="button">Prototypes</button>
+          </div>
+          <span class="win-count" aria-live="polite"></span>
+          <div class="win-nav">
+            <button class="win-btn" type="button" data-dir="-1" aria-label="Previous project">←</button>
+            <button class="win-btn" type="button" data-dir="1" aria-label="Next project">→</button>
+          </div>
+        </div>
+        <div class="win-view">
+          <article class="slide" aria-roledescription="slide" aria-label="Whitman Innovation Lab">
+            <div class="slide-head">
+              <div><p class="label">Founder, program lead · Since April 2026</p><h3>Whitman Innovation Lab</h3></div>
+              <p class="slide-tags">AI · Security · Fintech · Health</p>
+            </div>
+            <div class="slide-grid">
+              <div class="slide-text">
+                <p class="statement">A semester-long accelerator where CS students build and ship a prototype for a real problem brought by an alumni mentor.</p>
+                <p class="muted">The program pairs lectures on version control, system design and agentic coding with hands-on labs, weekly presentations and set milestones. I designed the curriculum, wrote the student guide, and built the budget proposal with high, low and pilot funding scenarios.</p>
+              </div>
+              <dl class="facts">
+                <div><dt>24</dt><dd>students in the first cohort</dd></div>
+                <div><dt>6</dt><dd>teams, two per alumni mentor</dd></div>
+                <div><dt>47</dt><dd>industry contacts, from Apple and Nvidia to OpenAI and Anthropic</dd></div>
+                <div><dt>3</dt><dd>nights in San Francisco for the strongest team per mentor</dd></div>
+              </dl>
+            </div>
+            <figure class="grading">
+              <figcaption><span class="label">/Grading</span> Shipping code counts for more than showing up.</figcaption>
+              <div class="bar" role="img" aria-label="Group project 40%, GitHub commits 30%, attendance and participation 10%, group presentations 10%, pre-class work 5%, post-class tasks 5%">
+                <span style="--w:40" class="s1"><b>40%</b> Group project</span>
+                <span style="--w:30" class="s2"><b>30%</b> GitHub commits</span>
+                <span style="--w:10" class="s3"><b>10%</b> Attendance</span>
+                <span style="--w:10" class="s3"><b>10%</b> Presentations</span>
+                <span style="--w:5" class="s4"><b>5%</b></span>
+                <span style="--w:5" class="s4"><b>5%</b></span>
+              </div>
+              <p class="bar-key">The two 5% slices are pre-class work and post-class tasks.</p>
+            </figure>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="Quak">
+            <div class="slide-head">
+              <div><p class="label">Product</p><h3>Quak</h3></div>
+              <p class="slide-tags">Carpooling · Housing · Events · Marketplace</p>
+            </div>
+            <div class="slide-grid">
+              <div class="slide-text">
+                <p class="statement">The hub for carpooling, housing, events and marketplace.</p>
+              </div>
+              <ul class="dash">
+                <li>Carpooling</li>
+                <li>Housing</li>
+                <li>Events</li>
+                <li>Marketplace</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="Fraud detection and fairness">
+            <div class="slide-head">
+              <div><p class="label">Research · Summer 2026</p><h3>Fraud detection &amp; fairness</h3></div>
+              <p class="slide-tags">Python · pandas · scikit-learn</p>
+            </div>
+            <div class="slide-grid">
+              <div class="slide-text">
+                <p class="statement">Fraud models are judged on how much fraud they catch. I also wanted to know who they wrongly flag.</p>
+                <p class="muted">I built a stacked ensemble classifier on the synthetic Sparkov transaction dataset, comparing random forests, XGBoost and neural networks. Because fraud is rare, I evaluated with precision, recall and precision-recall curves rather than accuracy. I then audited the models across cardholder groups using statistical parity, equalized odds and equal opportunity.</p>
+              </div>
+              <div class="slide-text">
+                <ul class="dash">
+                  <li>Preprocessing and feature engineering in Python with pandas, NumPy and scikit-learn, including log transforms for skewed features like city population</li>
+                  <li>A literature review covering Kozodoi et al. (2022), Kamalaruban et al. (2024), Hardt et al. (2016) and the Bank Account Fraud dataset suite</li>
+                  <li>Methods sections of a technical paper on fraud-injection calibration, preprocessing and skewness analysis</li>
+                </ul>
+                <p class="muted">Advisor: Richard Torres Molina</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="AI in healthcare">
+            <div class="slide-head">
+              <div><p class="label">Whitman Finance Accelerator · Sep 2025 – Mar 2026</p><h3>AI in healthcare</h3></div>
+              <p class="slide-tags">Consulting</p>
+            </div>
+            <div class="slide-grid">
+              <div class="slide-text">
+                <p class="statement">A consulting project on embedding AI in healthcare.</p>
+                <p class="muted">I led the project, weighing the costs and benefits of AI adoption against its effects on organizations and patients.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="Prototypes">
+            <div class="slide-head">
+              <div><p class="label">Side projects</p><h3>Built with Claude Code</h3></div>
+              <p class="slide-tags">Agentic coding</p>
+            </div>
+            <div class="slide-grid">
+              <div class="slide-text">
+                <p class="statement">Small tools for problems I ran into, built with agentic coding.</p>
+              </div>
+              <ul class="dash">
+                <li>A carpool app for Whitman students</li>
+                <li>A budgeting system</li>
+                <li>A course analytics dashboard</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section wrap" id="leadership" aria-labelledby="leadership-title">
+      <p class="label">/Leadership</p>
+      <h2 id="leadership-title" class="h-lg" data-split>Leadership &amp; roles</h2>
+
+      <div class="window reveal" data-window role="region" aria-roledescription="carousel" aria-label="Leadership and roles">
+        <div class="win-bar">
+          <span class="win-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <div class="win-tabs">
+            <button class="win-tab" type="button">ACM</button>
+            <button class="win-tab" type="button">Budget Advisory</button>
+            <button class="win-tab" type="button">ASWC Senate</button>
+            <button class="win-tab" type="button">Innovation Lab</button>
+            <button class="win-tab" type="button">Hackathon</button>
+            <button class="win-tab" type="button">Technology Services</button>
+            <button class="win-tab" type="button">Digital Fluencies</button>
+          </div>
+          <span class="win-count" aria-live="polite"></span>
+          <div class="win-nav">
+            <button class="win-btn" type="button" data-dir="-1" aria-label="Previous role">←</button>
+            <button class="win-btn" type="button" data-dir="1" aria-label="Next role">→</button>
+          </div>
+        </div>
+        <div class="win-view">
+          <article class="slide" aria-roledescription="slide" aria-label="President, ACM Student Chapter">
+            <div class="slide-head">
+              <div><p class="label">Jul 2025 – now</p><h3>President, ACM Student Chapter</h3></div>
+              <p class="slide-tags">Operations · Budget</p>
+            </div>
+            <p class="statement slide-wide">I lead the executive board, run the chapter's budget and operations, and worked with faculty, the CCEC and alumni to launch the Innovation Lab as a chapter initiative.</p>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="Member, President's Budget Advisory Committee">
+            <div class="slide-head">
+              <div><p class="label">Whitman College</p><h3>Member, President's Budget Advisory Committee</h3></div>
+              <p class="slide-tags">Budget · Governance</p>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="Finance Senator, ASWC">
+            <div class="slide-head">
+              <div><p class="label">Associated Students of Whitman College</p><h3>Finance Senator, ASWC</h3></div>
+              <p class="slide-tags">Student government · Finance</p>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="Founder, Whitman Innovation Lab">
+            <div class="slide-head">
+              <div><p class="label">April 2026 – now</p><h3>Founder, Whitman Innovation Lab</h3></div>
+              <p class="slide-tags">Curriculum · Mentors</p>
+            </div>
+            <p class="statement slide-wide">I designed the curriculum, wrote the student guide, built the budget proposal, and brought together alumni mentors and 47 industry contacts for the first cohort of 24 students.</p>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="Organizer, CCSC-NW Hackathon">
+            <div class="slide-head">
+              <div><p class="label">2026 – now</p><h3>Organizer, CCSC-NW Hackathon</h3></div>
+              <p class="slide-tags">Industry partners</p>
+            </div>
+            <p class="statement slide-wide">Organizing a hackathon alongside the regional computing conference hosted at Whitman, and recruiting a company to bring a real problem for participants to solve.</p>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="IT Consultant, Whitman Technology Services">
+            <div class="slide-head">
+              <div><p class="label">Sep 2024 – now</p><h3>IT Consultant, Whitman Technology Services</h3></div>
+              <p class="slide-tags">Support · Security</p>
+            </div>
+            <p class="statement slide-wide">About 15 hours a week supporting students, faculty and staff: resolving tickets, administering Duo multi-factor authentication, and supporting Microsoft 365.</p>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="Content Creator, Whitman Digital Fluencies">
+            <div class="slide-head">
+              <div><p class="label">Oct 2024 – May 2026</p><h3>Content Creator, Whitman Digital Fluencies</h3></div>
+              <p class="slide-tags">Design · Writing</p>
+            </div>
+            <p class="statement slide-wide">Designed posts, video visuals and posters in Canva, Photoshop and Illustrator, and wrote articles on topics from Apple Notes to how people work with AI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Let's connect -->
+    <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-left">
+        <h2 id="contact-title" class="h-xl" data-split>Let's connect.</h2>
+        <p class="body-lg reveal">I'm looking for mentors for the Innovation Lab, research collaborators, and summer engineering roles.</p>
+      </div>
+      <ul class="contact-card card reveal">
+        <li><a href="mailto:saabh@whitman.edu"><span class="k">Email</span><span class="v">saabh@whitman.edu</span><span class="go" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://www.linkedin.com/in/hayan-saab" rel="noopener"><span class="k">LinkedIn</span><span class="v">in/hayan-saab</span><span class="go" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://github.com/hayansaab" rel="noopener"><span class="k">GitHub</span><span class="v">hayansaab</span><span class="go" aria-hidden="true">↗</span></a></li>
+        <li><a href="assets/Hayan-Saab-Resume.pdf"><span class="k">Resume</span><span class="v">PDF</span><span class="go" aria-hidden="true">↗</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p class="foot-statement">Building things, and understanding every part of them.</p>
+      <div class="foot-cols">
+        <div>
+          <p class="label">/Quick links</p>
+          <ul>
+            <li><a href="#about">Who am I</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#contact">Let's connect</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="label">/Contact</p>
+          <ul>
+            <li><a href="mailto:saabh@whitman.edu">saabh@whitman.edu</a></li>
+            <li><a href="https://www.linkedin.com/in/hayan-saab" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/hayansaab" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrap foot-base">
+      <span>©2026 Hayan Saab</span>
+      <span>/Walla Walla, Washington</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="main.js"></script>
+  <script src="globe.js"></script>
+  <script src="face.js"></script>
+</body>
+</html>
